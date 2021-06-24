@@ -8,9 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.List;
 
-public class TasksAdapter extends RecyclerView.Adapter<TasksAdapter.TasksViewHolder> {
+public class TasksAdapter<Task> extends RecyclerView.Adapter<TasksAdapter.TasksViewHolder> {
 
     private Context mCtx;
     private List<Task> taskList;
